@@ -1,3 +1,5 @@
+import RestaurantsSource from '../../data/restaurants-source';
+
 const List = {
   async render() {
     return `
@@ -6,7 +8,8 @@ const List = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const restaurants = await RestaurantsSource.listRestaurants();
+    console.log(restaurants);
   },
 };
 
