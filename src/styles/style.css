@@ -37,6 +37,7 @@ body {
 #hamburgerButton {
     background:none;
     border: none;
+    cursor: pointer;
 }
    
   .bar-1, .bar-2, .bar-3 {
@@ -76,8 +77,6 @@ body {
     width: 50vw;
     height: 90vh;
     background-color: sandybrown;
-   /* padding: 0 24px; */
-
     transform: translateX(-100%);
   }
 
@@ -98,6 +97,20 @@ body {
     width: 100%;
   }
 
+  footer {
+    padding: 16px;
+  }
+   
+  footer p {
+    text-align: center;
+    color: #aaaaaa;
+  }
+   
+  footer p a {
+    color: #db0000;
+    text-decoration: none;
+  }
+
   @media screen and (min-width: 650px) {
     body {
         background-color: saddlebrown;
@@ -105,6 +118,7 @@ body {
     .app-bar {
         justify-content: space-between;
     }
+
     .app-bar .app-bar__menu {
         display: none;
     }

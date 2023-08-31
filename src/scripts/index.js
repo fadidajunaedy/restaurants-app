@@ -1,11 +1,9 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
+import App from './views/app';
 
-const hamburgerButton = document.getElementById('hamburgerButton');
-const navigationDrawer = document.getElementById('navigationDrawer');
-hamburgerButton.addEventListener('click', () => {
-  hamburgerButton.classList.toggle('navbar__open');
-  navigationDrawer.classList.toggle('navbar__open');
+const app = new App({
+  button: document.querySelector('#hamburgerButton'),
+  drawer: document.querySelector('#navigationDrawer'),
+  content: document.querySelector('#mainContent'),
 });
-
-console.log('Hello Coders!');
